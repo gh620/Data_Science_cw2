@@ -17,6 +17,10 @@ All the code is writen in **R**, run in the Rstudio. The final statistical analy
 
 Notice that though running the source scripts and/or the .tex document by other software/platform should give the same result, output might be slightly effected if different software/platform is used. To ensure the best reproducibilty please run all documents as the softwares/platforms stated above. 
 
+### Pakages Used
+
+R Packages used in this pproject include: `readr`, 
+
 ## Folder Structure
 
 The code and analysis are structured as follows: 
@@ -27,7 +31,7 @@ The code and analysis are structured as follows:
 
 This directory contains all raw and derived datasets used in this projects. 
 
-Raw data (.zip file) can be found on [this website](https://archive.ics.uci.edu/dataset/563/iranian+churn+dataset). Time collected of raw data from the above website: April 2024. 
+Raw data (unzipped to .csv file) can be found on [this website](https://archive.ics.uci.edu/dataset/563/iranian+churn+dataset). Time collected of raw data from the above website: April 2024. 
 
 
 More information and background can be found in [this paper](https://scirp.org/reference/referencespapers?referenceid=2607575). 
