@@ -72,9 +72,4 @@ hist(DistinctCalledNumbers,breaks=40,col="skyblue",
      probability = T,ylim=c(0,0.05),
      xlab="total number of distinct calls ")
 
-# hist(CustomerValue,breaks=100,col="skyblue",
-#      main="Histogram of Customer Value",
-#      probability = T,ylim=c(0,0.0035),
-#      xlab="Customer Value ")
-
 detach(IranianChurn)
