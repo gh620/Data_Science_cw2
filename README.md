@@ -27,10 +27,10 @@ The code and analysis are structured as follows:
 
 This directory contains all raw and derived datasets used in this projects. 
 
-Raw data (.zip file) can be found on this website. Time collected of raw data from the above website: April 2024. 
+Raw data (.zip file) can be found on [this website](https://archive.ics.uci.edu/dataset/563/iranian+churn+dataset). Time collected of raw data from the above website: April 2024. 
 
 
-More information and background can be found in [this paper](). 
+More information and background can be found in [this paper](https://scirp.org/reference/referencespapers?referenceid=2607575). 
 
 ### scr 
 
@@ -54,6 +54,6 @@ This folder contains all document to produce the final jourlism piece to submit,
 
 Author: Grace Huang
 Institution: Imperial College London, Mathematics department. 
-Contact information: grace.huang23@imperial.ac.uk
+Contact information: [grace.huang23@imperial.ac.uk](grace.huang23@imperial.ac.uk)
 
 
