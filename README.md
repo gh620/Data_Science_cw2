@@ -48,7 +48,7 @@ Contains all
 
 ### reports
 
-This folder contains all document to produce the final jourlism piece to submit, it contains mainly the .tex documents which writes the report in LaTeX. Notice the LaTeX document needs the output tables/figures from the "output" folder. 
+This folder contains all document to produce the final report to submit, it contains mainly the .tex documents which writes the report in LaTeX. Notice the LaTeX document needs the output tables/figures from the "output" folder. 
 
 ## Author
 
