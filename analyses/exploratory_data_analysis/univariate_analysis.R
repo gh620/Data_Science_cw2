@@ -1,4 +1,4 @@
-## Univariate Anlaysis
+# Univariate Anlaysis
 library(readr)
 IranianChurn <- read_csv("data/derived/IranianChurn_cleaned.csv")
 attach(IranianChurn)

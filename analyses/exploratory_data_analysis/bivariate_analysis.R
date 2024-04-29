@@ -1,3 +1,5 @@
+library(readr)
+IranianChurn <- read_csv("data/derived/IranianChurn_cleaned.csv")
 library(sm)
 attach(IranianChurn)
 
