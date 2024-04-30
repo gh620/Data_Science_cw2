@@ -19,7 +19,7 @@ Notice that though running the source scripts and/or the .tex document by other 
 
 ### Pakages Used
 
-R Packages used in this pproject include: `readr`, 
+R Packages used in this pproject include: `readr`, `sm`, `tidyr`, `Stat2Data`, `plyr`, 
 
 ## Folder Structure
 
@@ -52,7 +52,7 @@ Contains all
 
 ### reports
 
-This folder contains all document to produce the final report to submit, it contains mainly the .tex documents which writes the report in LaTeX. Notice the LaTeX document needs the output tables/figures from the "output" folder. 
+This folder contains all document to produce the final report to submit, it contains mainly the .tex documents which writes the report in LaTeX, and the reflective pieces in pdf. Notice the LaTeX document needs the output tables/figures from the "output" folder. 
 
 ## Author
 

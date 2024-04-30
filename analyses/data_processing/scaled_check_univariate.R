@@ -1,14 +1,14 @@
 # Univariate Anlaysis
 library(readr)
-IranianChurn <- read_csv("data/derived/IranianChurn_cleaned.csv")
+IranianChurn <- read_csv("data/derived/IranianChurn_cleaned_train_scaled.csv")
 attach(IranianChurn)
 
-png("outputs/figures/univariate_analysis.png", width = 1000, height = 580, res=80)
+png("outputs/figures/univariate_analysis_scaled.png", width = 1000, height = 580)
 
 par(mfrow=c(3,4), oma = c(4,1,1,1), mar = c(4, 4, 4, 1))
 
 # Bar plot of Categorical Variables, Churn (outcome)
-barplot(prop.table(table(IranianChurn$Churn)), col="navy",
+barplot(prop.table(table(IranianChurn$Churnf)), col="navy",
         main="Distributoin of Churn",
         ylab="Proportion", xlab="Churn", ylim=c(0,1), axis.lty=1)
 

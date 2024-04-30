@@ -11,6 +11,8 @@
 #'
 #' reference: Dr. Teresa Brunsdon, Materials in Advanced Statistical Modelling Module from University of Warwick
 
+library(Stat2Data)    # for myemplogit() function
+library(plyr)         # for myemplogit() function
 
 myemplogit <- function(yvar=y,xvar=x,maxbins=10,sc=1,line=TRUE,...){
   breaks  <<- unique(quantile(xvar, probs=0:maxbins/maxbins))
