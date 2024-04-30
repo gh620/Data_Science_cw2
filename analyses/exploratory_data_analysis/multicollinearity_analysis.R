@@ -1,5 +1,4 @@
 library(readr)
-library(sm)
 library(dplyr)
 library(corrplot)
 

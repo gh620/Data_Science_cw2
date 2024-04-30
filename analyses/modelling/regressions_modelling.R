@@ -1,9 +1,14 @@
 library(readr)
 library(glmnet)       
 library(gglasso)
+library(dplyr)
 
 # import dataset, training only
 train <- read_csv("data/derived/IranianChurn_cleaned_train_scaled.csv")
+
+# Transform the 'Churn' variable from 'non-CHURN', 'CHURN' to 0, 1
+train <- train %>%
+  mutate(Churn = ifelse(Churn == "non-CHURN", 0, 1))
 
 # These 3 vars are transformed already: SecondsofUse + Frequencyofuse + FrequencyofSMS 
 # All continuous vars are scaled
