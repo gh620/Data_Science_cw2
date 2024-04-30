@@ -8,7 +8,7 @@ The project will work on the dataset concerning the CHURN of telecom customers f
 
 - Exploratory Data Analysis of the dataset
 - Regression Modelling by different regressor methods
-- Model diagnostics and further discussions
+- Compare model performance and further discussions
 
 
 ## Software and packages Used
@@ -19,7 +19,7 @@ Notice that though running the source scripts and/or the .tex document by other 
 
 ### Pakages Used
 
-R Packages used in this pproject include: `readr`, `sm`, `tidyr`, `Stat2Data`, `plyr`, 
+R Packages used in this pproject include: `readr`, `sm`, `tidyr`, `dplyr`, `corrplot`,  `Stat2Data`, `plyr`, `gglasso`, `glmnet`, `caret`, `e1017`.
 
 ## Folder Structure
 
