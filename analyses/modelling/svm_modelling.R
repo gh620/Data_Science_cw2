@@ -20,9 +20,17 @@ train_scaled$Churn <- train$Churn
 test_scaled$Churn <- test$Churn
 
 # Train the SVM model
-svm_model <- svm(Churn ~ ., data = train_scaled, type = "C-classification", kernel = "radial")
+svm_model <- svm(Churn ~ ., data = train_scaled, type = "C-classification", 
+                 probability = TRUE, kernel = "radial")
 
 # Print the model summary
 summary(svm_model)
+
+# Make predictions on the test data
+predictions <- predict(svm_model, test_scaled)
+
+# Evaluate the model performance
+confusion_matrix <- confusionMatrix(predictions, test_scaled$Churn)
+print(confusion_matrix)
 
 

@@ -13,7 +13,7 @@ The project will work on the dataset concerning the CHURN of telecom customers f
 
 ## Software and packages Used
 
-All the code is writen in **R**, run in the Rstudio. The final statistical analysis report is created by .tex document using **LaTeX**, knitted by the online editing platform Overleaf. 
+All the code is written in **R**, run in the Rstudio. The final statistical analysis report is created by .tex document using **LaTeX**, knitted by the online editing platform Overleaf. 
 
 Notice that though running the source scripts and/or the .tex document by other software/platform should give the same result, output might be slightly effected if different software/platform is used. To ensure the best reproducibilty please run all documents as the softwares/platforms stated above. 
 
