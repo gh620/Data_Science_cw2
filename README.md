@@ -55,8 +55,8 @@ This folder contains all documents to produce the final report to submit, it con
 
 ## Author
 
-Author: Grace Huang
-Institution: Imperial College London, Mathematics department. 
+Author: Grace Huang \
+Institution: Imperial College London, Mathematics department. \
 Contact information: [grace.huang23@imperial.ac.uk](grace.huang23@imperial.ac.uk)
 
 
