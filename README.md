@@ -13,13 +13,13 @@ The project will work on the dataset concerning the CHURN of telecom customers f
 
 ## Software and packages Used
 
-All the code is written in **R**, run in the Rstudio. The final statistical analysis report is created by .tex document using **LaTeX**, knitted by the online editing platform Overleaf. 
+All the code is written in **R**, and run in the Rstudio. The final statistical analysis report is created by .tex document using **LaTeX**, knitted by the online editing platform Overleaf. 
 
-Notice that though running the source scripts and/or the .tex document by other software/platform should give the same result, output might be slightly effected if different software/platform is used. To ensure the best reproducibilty please run all documents as the softwares/platforms stated above. 
+Notice that though running the source scripts and/or the .tex document by other software/platforms should give the same result, the output might be slightly affected if different software/platform is used. To ensure the best reproducibility please run all documents as the software/platforms stated above. 
 
 ### Pakages Used
 
-R Packages used in this pproject include: `readr`, `sm`, `tidyr`, `dplyr`, `corrplot`,  `Stat2Data`, `plyr`, `gglasso`, `glmnet`, `caret`, `e1017`.
+R Packages used in this project include: `readr`, `sm`, `tidyr`, `dplyr`, `corrplot`,  `Stat2Data`, `plyr`, `gglasso`, `glmnet`, `caret`, `e1017`.
 
 ## Folder Structure
 
@@ -29,7 +29,7 @@ The code and analysis are structured as follows:
 
 - Sub-directory: raw, derived
 
-This directory contains all raw and derived datasets used in this projects. 
+This directory contains all raw and derived datasets used in this project. 
 
 Raw data (unzipped to .csv file) can be found on [this website](https://archive.ics.uci.edu/dataset/563/iranian+churn+dataset). Time collected of raw data from the above website: April 2024. 
 
@@ -41,18 +41,19 @@ More information and background can be found in [this paper](https://scirp.org/r
 The scourse folder contains the definitions/scripts for the pre-defined functions used in the analysis. 
 
 ### analyses
+- Sub-directory: data_processing, exploratory_data_analysis, modelling, evaluation
 
-The analyses directory contains all code used to analyse the data and/or to produce the contents in the "outputs" folder. 
+The analyses directory contains all code used to analyse the data and/or to produce the contents in the "outputs" folder, all scripts are stored in the corresponding named folder. 
 
 ### outputs
 
 - Sub-directory: figures
 
-Contains all 
+Contains all figures output from the R code. 
 
 ### reports
 
-This folder contains all document to produce the final report to submit, it contains mainly the .tex documents which writes the report in LaTeX, and the reflective pieces in pdf. Notice the LaTeX document needs the output tables/figures from the "output" folder. 
+This folder contains all documents to produce the final report to submit, it contains mainly the .tex documents which writes the report in LaTeX, and the reflective pieces in pdf. Notice the LaTeX document needs the output tables/figures from the "output" folder. 
 
 ## Author
 
