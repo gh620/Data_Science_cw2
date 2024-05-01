@@ -1,4 +1,4 @@
-# Data_Science_cw2
+# Data Science Coursework 2
 
 Coursework 2 of Data Science Module at Imperial College London
 
