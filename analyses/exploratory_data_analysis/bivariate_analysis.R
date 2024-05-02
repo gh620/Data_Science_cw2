@@ -1,3 +1,4 @@
+################## Run data_cleaning.r first
 library(readr)
 IranianChurn <- read_csv("data/derived/IranianChurn_cleaned.csv")
 library(sm)
@@ -21,6 +22,24 @@ sm.density.compare(FrequencyofSMS,Churn, lwd=2)
 title(main="Total number of text messages")
 sm.density.compare(DistinctCalledNumbers,Churn, lwd=2)
 title(main="Total number of distinct phone calls")
+sm.density.compare(AgeGroupNum,Churn, lwd=2) #defined in data_clean.r
+title(main="Age Group")
+
+par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE)
+plot(0, 0, type = 'l', bty = 'n', xaxt = 'n', yaxt = 'n')
+legend('bottom', legend = c("non-CHURN", "CHURN"), 
+       lty=c(2,1), col=c(3,2), lwd=2, horiz = TRUE, xpd = TRUE, 
+       seg.len=2, cex = 1.5, inset = 0, bty = "o")
+
+# Close the graphics device
+dev.off()
+
+png("outputs/figures/conditional_density_plot_ordinal.png", width = 680, height = 380, res=80)
+
+par(oma = c(4,1,1,1), mfrow = c(1, 2), mar = c(4, 4, 4, 1))
+
+sm.density.compare(ChargeAmount,Churn, lwd=2)
+title(main="Charge Amount")
 sm.density.compare(AgeGroupNum,Churn, lwd=2) #defined in data_clean.r
 title(main="Age Group")
 
