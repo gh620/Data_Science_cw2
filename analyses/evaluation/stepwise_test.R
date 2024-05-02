@@ -3,7 +3,7 @@ library(hnp)
 library(car)
 
 # saving figures
-png("outputs/figures/stepwise_diagnostics.png", width = 1080, height = 280, res=80)
+png("outputs/figures/stepwiseAIC_diagnostics.png", width = 1080, height = 280, res=80)
 
 ## Model diagnostics 
 par(mfrow=c(1,4), mar=c(4,4,3,1))
