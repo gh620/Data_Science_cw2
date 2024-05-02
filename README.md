@@ -17,7 +17,7 @@ Notice that though running the source scripts and/or the .tex document by other 
 
 ### Pakages Used
 
-R Packages used in this project include: `readr`, `sm`, `tidyr`, `dplyr`, `corrplot`,  `Stat2Data`, `plyr`, `gglasso`, `glmnet`, `caret`, `e1017`.
+R Packages used in this project include: `readr`, `sm`, `tidyr`, `dplyr`, `corrplot`,  `Stat2Data`, `plyr`, `gglasso`, `glmnet`, `caret`, `e1017`, `hnp`, `car`.
 
 ## Folder Structure
 
