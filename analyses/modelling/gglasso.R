@@ -10,6 +10,12 @@ train <- read_csv("data/derived/IranianChurn_cleaned_train_scaled.csv")
 train <- train %>%
   mutate(Churn = ifelse(Churn == "non-CHURN", 0, 1))
 
+# For model matrix
+fullmodel <- glm(Churn~CallFailure + Complains + poly(SubscriptionLength,3) + 
+                   ChargeAmount + AgeGroup + TariffPlan + Status + DistinctCalledNumbers +
+                   SecondsofUse + Frequencyofuse + FrequencyofSMS, 
+                 family=binomial(link="logit"), data=train)
+
 ## gglasso
 y <- train$Churn
 X <- model.matrix(fullmodel)[,-1] # [-1] removes intercept
