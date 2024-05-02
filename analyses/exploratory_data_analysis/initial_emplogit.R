@@ -7,7 +7,7 @@ IranianChurn <- IranianChurn %>%
 
 attach(IranianChurn)
 
-png("outputs/figures/emplogit_init.png", width = 1000, height = 680, res=100)
+png("outputs/figures/emplogit_init.png", width = 1000, height = 480, res=100)
 
 # import myemplogit() function from the R file in scr diresctory
 source("scr/myemplogit.R")
