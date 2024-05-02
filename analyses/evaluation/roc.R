@@ -46,6 +46,8 @@ auc_bic <- auc(roc_bic)
 # Print AUC
 print(paste("AUC for gglasso:", auc_gglasso))
 print(paste("AUC for SVM:", auc_svm))
+print(paste("AUC for AIC:", auc_aic))
+print(paste("AUC for BIC:", auc_bic))
 
 # saving figures
 png("outputs/figures/roc.png", width = 480, height = 480, res=100)
@@ -54,7 +56,8 @@ plot(roc_gglasso, main="ROC Curves Comparison", col="pink", xlim=c(1,0))
 lines(roc_svm, add=TRUE, col="skyblue")
 lines(roc_aic, add=TRUE, col="lightgreen")
 lines(roc_bic, add=TRUE, col="violet")
-legend("bottomright", legend=c("gglasso: AUC=0.9314", "SVM: AUC=0.9649"), 
+legend("bottomright", legend=c("gglasso: AUC=0.9314", "SVM: AUC=0.9649", 
+                               "AIC: AUC=0.9427", "AIC: AUC=0.9444"), 
        col=c("pink", "skyblue", "lightgreen", "violet"), lwd=2)
 
 dev.off()
