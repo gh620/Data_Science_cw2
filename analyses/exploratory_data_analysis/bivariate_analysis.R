@@ -34,19 +34,34 @@ legend('bottom', legend = c("non-CHURN", "CHURN"),
 # Close the graphics device
 dev.off()
 
-png("outputs/figures/conditional_density_plot_ordinal.png", width = 680, height = 380, res=80)
 
-par(oma = c(4,1,1,1), mfrow = c(1, 2), mar = c(4, 4, 4, 1))
+# Calculate the counts for each category split by churn status
+complains_table <- table(Complains, Churn)
+tariff_table <- table(TariffPlan, Churn)
+status_table <- table(Status, Churn)
 
-sm.density.compare(ChargeAmount,Churn, lwd=2)
-title(main="Charge Amount")
-sm.density.compare(AgeGroupNum,Churn, lwd=2) #defined in data_clean.r
-title(main="Age Group")
+# Set up the plotting area
+png("outputs/figures/conditional_barplot_discrete.png", width = 1000, height = 380, res=100)
+par(mfrow=c(1, 3), mar=c(5, 4, 2, 1))  # Adjust margins if necessary
 
+# Plot for Complains
+barplot(complains_table, beside = T, col = c("skyblue", "pink"), 
+        main = "Complains", ylim = c(0, max(complains_table)*1.2),
+        ylab = "Count")
+
+# Plot for TariffPlan
+barplot(tariff_table, beside = T, col = c("skyblue", "pink"),
+        main = "Tariff Plan", ylim = c(0, max(tariff_table)*1.2))
+
+# Plot for Status
+barplot(status_table, beside = T, col = c("skyblue", "pink"),
+        main = "Status", ylim = c(0, max(status_table)*1.2))
+
+# Adding a legend
 par(fig = c(0, 1, 0, 1), oma = c(0, 0, 0, 0), mar = c(0, 0, 0, 0), new = TRUE)
 plot(0, 0, type = 'l', bty = 'n', xaxt = 'n', yaxt = 'n')
 legend('bottom', legend = c("non-CHURN", "CHURN"), 
-       lty=c(2,1), col=c(3,2), lwd=2, horiz = TRUE, xpd = TRUE, 
+       fill = c("skyblue", "pink"), col=c(3,2), horiz = TRUE, xpd = TRUE, 
        seg.len=2, cex = 1.5, inset = 0, bty = "o")
 
 # Close the graphics device

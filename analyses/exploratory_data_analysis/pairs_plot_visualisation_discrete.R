@@ -5,7 +5,7 @@ library(readr)
 # Load the dataset
 IranianChurn <- read_csv("data/derived/IranianChurn_cleaned.csv")
 
-png("outputs/figures/pairs_plot_discrete.png", width = 480, height = 480, res=100)
+png("outputs/figures/pairs_plot_discrete.png", width = 680, height = 680, res=100)
 
 
 # Selected continuous variables
