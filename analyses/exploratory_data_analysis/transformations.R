@@ -1,5 +1,10 @@
 library(readr)
 IranianChurn <- read_csv("data/derived/IranianChurn_cleaned.csv")
+
+# Transform the 'Churn' variable from 'non-CHURN', 'CHURN' to 0, 1
+IranianChurn <- IranianChurn %>%
+  mutate(Churn = ifelse(Churn == "non-CHURN", 0, 1))
+
 attach(IranianChurn)
 
 png("outputs/figures/emplogit.png", width = 1200, height = 780, res=100)
